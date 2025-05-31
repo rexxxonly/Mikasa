@@ -161,7 +161,7 @@ module.exports.onChat = async ({
         const body = event.body ? event.body?.toLowerCase() : ""
         if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {
             const arr = body.replace(/^\S+\s*/, "")
-            const randomReplies = ["😘", "bolo jaan 🥺", "Amake na deke amar boss saim er sathe prem kor 😧", "ki koibi ko taratari 😒", "Kire kemon achis?", "Bolo jaan ki korte pari apnar jonno"];
+            const randomReplies = ["😒𝗵𝘂𝗺 𝘀𝘂𝗻𝘀𝗶", "𝗞𝗶 𝗵𝗼𝗶𝘀𝗲 😾","𝗸𝗶 𝗵𝗼𝗶𝘀𝗲 𝗯𝗯𝘆 𝗯𝗯𝘆 𝗸𝗿𝗼 𝗸𝗲 ", "𝗧𝘂𝗸𝗶 𝗯𝗯𝘆🐤🐤", "𝗔𝘀𝘀𝗮𝗹𝗮𝗺𝘂𝗮𝗹𝗮𝗶𝗸𝘂𝗺🎀","𝗯𝗯𝘆 𝗯𝗼𝗹𝘁𝗲 𝗯𝗼𝗹𝘁𝗲 𝗵𝗮𝗽𝗶𝘆𝗲 𝗴𝗲𝘀𝗼 🍷 𝗻𝗲𝘄 𝗮𝗸𝘁𝘂 𝗸𝗵𝗮𝘄","𝗵𝘂😒","𝘆𝗲𝗮𝗵 𝗯𝗮𝗯𝘆🙈😀","𝗕𝗼𝗹𝗼  𝗸𝗶 𝗸𝗼𝗿𝘁𝗲 𝗽𝗮𝗿𝗶 𝘁𝗺𝗿 𝗷𝗼𝗻𝗻𝗼","𝐇𝐮𝐦𝐦 𝐛𝐥𝐨","𝗧𝗮𝗽𝗿𝗮𝗶𝘆𝗮 𝗱𝗮𝘁 𝗳𝗮𝗹𝗮𝗶 𝗱𝗲𝗺𝘂 🐸","𝗔𝗥 𝗮𝘀𝗯𝗼 𝗻𝗮 𝘁𝗼𝗿 𝗸𝗮𝗰𝗵𝗲😒😒","👀🫶🏻","𝗴𝗵𝘂𝗺𝗮𝗶 𝘀𝗲"];
             if (!arr) {
 
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
