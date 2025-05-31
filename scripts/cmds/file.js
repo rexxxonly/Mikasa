@@ -3,21 +3,21 @@ const fs = require('fs');
 module.exports = {
 	config: {
 		name: "file",
-		aliases: ["files"],
+		aliases: ["de", "give"],
 		version: "1.0",
-		author: "Mahir Tahsan",
+		author: "404",
 		countDown: 5,
 		role: 0,
 		shortDescription: "Send bot script",
 		longDescription: "Send bot specified file ",
-		category: "𝗢𝗪𝗡𝗘𝗥",
+		category: "owner",
 		guide: "{pn} file name. Ex: .{pn} filename"
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["61565898444113",];
+		const permission = global.GoatBot.config.owner;
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" You don't have permission to use this command. 🐤", event.threadID, event.messageID);
+			return api.sendMessage("Uiraa jaa mangeer pulaaa😾", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
