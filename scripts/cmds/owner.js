@@ -16,17 +16,15 @@ config: {
   onStart: async function ({ api, event }) {
   try {
     const ownerInfo = {
-      name: 'APON 💝👽',
-      choise: 'SIMPLE GILRS 🔥',
-      habit: 'talking with girls 🔥',
-      gender: 'Male',
-      age: 'secret',
-      height: '_hat 🐸🤠',
-      facebookLink: 'https://www.facebook.com/share/1BfGepkNh7/',
-      nick: 'sujon 💫🔥'
+      name: '𝒢𝓍 𝑅𝒶𝒾𝒽𝒶𝓃',
+      gender: '𝑀𝒶𝓁𝑒',
+      age: '𝓤𝓷𝓴𝓷𝓸𝔀𝓷',
+      height: '𝓤𝓷𝓴𝓷𝓸𝔀𝓷',
+      facebookLink: 'stalk moko mwa',
+      nick: '𝑅𝒶𝒽𝓊𝓊𝓊'
     };
 
-    const bold = 'https://i.imgur.com/LbneO8C.mp4'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
+    const bold = 'https://tinyurl.com/2czyjn8e'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
@@ -39,18 +37,21 @@ config: {
 
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
-    const response = `╭────────────◊
-├‣Oᴡɴᴇʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ 📃
-├───────────◊
-├‣ Nᴀᴍᴇ: ${ownerInfo.name}
-├‣ Cʜᴏɪsᴇ: ${ownerInfo.choise}
-├‣ Hᴀʙɪᴛ: ${ownerInfo.habit}
-├‣ Gᴇɴᴅᴇʀ:  ${ownerInfo.gender}
-├‣ Aɢᴇ:  ${ownerInfo.age}
-├‣ Hᴇɪɢʜᴛ: ${ownerInfo.height}
-├‣ Fᴀᴄᴇʙᴏᴏᴋ:  ${ownerInfo.facebookLink}
-├‣ Nɪᴄᴋ: ${ownerInfo.nick}   
-╰───────────◊`;
+    const response = `
+𝗢𝘄𝗻𝗲𝗿 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 -𝗛𝗜𝗡𝗔𝗧𝗔 :🤍✨
+
+~ 𝐍𝐚𝐦𝐞: ${ownerInfo.name}
+
+~ 𝐆𝐞𝐧𝐝𝐞𝐫: ${ownerInfo.gender}
+
+~ 𝐀𝐠𝐞: ${ownerInfo.age}
+
+~ 𝐇𝐞𝐢𝐠𝐡𝐭: ${ownerInfo.height}
+
+~ 𝐍𝐢𝐜𝐤: ${ownerInfo.nick}
+
+~ 𝐁𝐨𝐭 𝐍𝐚𝐦𝐞: 𝗛𝗜𝗡𝗔𝗧𝗔 ✨
+`;
 
 
     await api.sendMessage({
